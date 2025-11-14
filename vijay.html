@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap Framework -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            height: 100vh;
+            background: linear-gradient(#000000a7, #000000a7), url("https://picsum.photos/1600/900") center/cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.3rem;
+        }
+        .project-card img {
+            height: 180px;
+            object-fit: cover;
+        }
+        footer {
+            background: #111;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div>
+            <h1>Hello, I'm <span style="color:#00eaff">Your Name</span></h1>
+            <p>Web Developer | Designer | Freelancer</p>
+            <a href="#projects" class="btn btn-info btn-lg mt-3">View My Work</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container my-5">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <img src="https://picsum.photos/400" class="img-fluid rounded" alt="profile">
+            </div>
+            <div class="col-md-7">
+                <p>
+                    I’m a passionate developer experienced in creating websites, mobile apps,
+                    and modern UI/UX designs. I love building clean, responsive, and dynamic applications.
+                </p>
+                <p>
+                    My goal is to create visually appealing and user-friendly solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container my-5">
+        <h2 class="text-center mb-4">Projects</h2>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="https://picsum.photos/seed/p1/600" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Project One</h5>
+                        <p class="card-text">Description of your awesome project.</p>
+                        <a href="#" class="btn btn-dark">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="https://picsum.photos/seed/p2/600" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Two</h5>
+                        <p class="card-text">Another project you worked on.</p>
+                        <a href="#" class="btn btn-dark">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="https://picsum.photos/seed/p3/600" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Three</h5>
+                        <p class="card-text">A cool project built with modern tools.</p>
+                        <a href="#" class="btn btn-dark">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="container my-5">
+        <h2 class="text-center mb-4">Skills</h2>
+        <div class="row text-center">
+            <div class="col-md-3"><span class="badge bg-dark p-3">HTML</span></div>
+            <div class="col-md-3"><span class="badge bg-dark p-3">CSS</span></div>
+            <div class="col-md-3"><span class="badge bg-dark p-3">Bootstrap</span></div>
+            <div class="col-md-3"><span class="badge bg-dark p-3">JavaScript</span></div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contact Me</h2>
+
+        <form class="w-75 mx-auto">
+            <input type="text" class="form-control mb-3" placeholder="Your Name">
+            <input type="email" class="form-control mb-3" placeholder="Email">
+            <textarea class="form-control mb-3" rows="5" placeholder="Message"></textarea>
+            <button class="btn btn-dark w-100">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
